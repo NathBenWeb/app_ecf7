@@ -14,11 +14,11 @@
 <body>
 <header>
   <div id="ancre"></div>
-  <div id="header" class="navbar fixed-top">
+  <div id="header" class="navbar ">
     <a id class="navbar-brand" href="index.php"><img id="logoHeader" src="./assets/pictures/logo2.png" alt="" class="logo" width="80px"></a>
-    <a class="nav-link active" aria-current="page" href="index.php?action=accueil"> Accueil</a>
-    <a class="nav-link" href="index.php?action=about"> A propos</a>
+    <a class="nav-link active" aria-current="page" href="index.php?action=accueil"><i class="fas fa-door-open"></i> Accueil</a>
     <a class="nav-link" href="index.php?action=contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <a class="nav-link" href="index.php?action=about"><i class="far fa-hand-point-right"></i> A propos</a>
     <a href="index.php?action=login"><i class="fa fa-fw fa-user"></i> Admin</a>
   </div>
    
