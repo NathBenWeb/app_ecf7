@@ -1,0 +1,13 @@
+{
+    "name": "natha/app_ecf7",
+    "authors": [
+        {
+            "name": "Nathalie Bendavid",
+            "email": "nathaliebendavidweb@gmail.com"
+        }
+    ],
+    "require": {
+        "stripe/stripe-php": "^7.76",
+        "phpmailer/phpmailer": "^6.4"
+    }
+}

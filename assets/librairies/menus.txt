@@ -1,0 +1,69 @@
+MENU_Cyril_Lignac
+Pour commencer :
+Noix De Saint-Jacques À L’orange, Sauce Safran Et Cognac
+
+Pour suivre : 
+Risotto alla milanaise sur effiloché de canard confit à la confiture d'oignons et canneberges
+
+Et pour finir :
+Verrines fraises chantilly et crumble aux noisettes
+
+///////////////////////////////////////////////////////////
+
+MENU_Philippe_Etchebest
+Pour commencer :
+Aumônière de Ratte du Touquet et saumon fumé à la coriandre
+
+Pour suivre : 
+Carré d'agneau de lait des Pyrénées, rôti aux herbes, et jus aux aromates
+
+Et pour finir :
+Entremets pain d'épices et mousse de mascarpone aux clémentines
+
+///////////////////////////////////////////////////////////
+
+MENU_Marc_Veyrat
+Pour commencer :
+Crème de chou-fleur sur langoustines
+
+Pour suivre : 
+Tournedos Rossini
+
+Et pour finir :
+Cube au chocolat Jivara & cœur passion
+
+///////////////////////////////////////////////////////////
+
+MENU_Eric_Frechon
+Pour commencer :
+Soupe de betterave et radis
+
+Pour suivre : 
+Couscous de cabillaud au lard et émulsion de cresson
+
+Et pour finir :
+Comme un air d'Opéra - Petit entremets chocolat, café et fève tonka
+
+///////////////////////////////////////////////////////////
+
+MENU_Alain_Ducasse
+Pour commencer :
+Cheesecakes à l'avocat et au saumon | Une Plume dans la Cuisine
+
+Pour suivre : 
+Rôti de lotte, sabayon à la mandarine
+
+Et pour finir :
+Millefeuilles de Gavottes sauce caramel
+
+///////////////////////////////////////////////////////////
+
+MENU_Michel_Troigros
+Pour commencer :
+Velouté de panais et Saint Jacques
+
+Pour suivre : 
+Riz croustillant, Saint-Jacques, beurre gingembre - Miss Crumble
+
+Et pour finir :
+Le Millefeuille Zéphyr

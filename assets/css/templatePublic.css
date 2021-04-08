@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+body {
+  margin: 0;
+	min-height: 100vh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+  font-family:'Abril Fatface', cursive;
+}
+
+
+/*----- HEADER ------- */
+/* Style the navigation bar */
+#header {
+  width: 100%;
+  background-color:rgb(3, 3, 29);
+  overflow: auto;
+  border: solid 0.2px rgb(174,140,95);
+  font-family:'Abril Fatface', cursive;
+  position: relative;
+  
+}
+
+/* Navbar links */
+#header a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: rgb(174,140,95);
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 5px;
+}
+#header a:last-child{
+  margin-right: 10px;
+}
+
+/* Navbar links on mouse-over */
+#header a:hover {
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+
+
+/* Current/active navbar link */
+/* .active {
+  background-color: #4CAF50;
+} */
+
+
+
+/*----- FOOTER ------- */
+#footer {
+  overflow: hidden;
+  background-color:rgb(3, 3, 29);
+  border: solid 0.2px rgb(174,140,95);
+  /* opacity: 0.7; */
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+  font-family:'Abril Fatface', cursive;
+  
+}
+
+#footer a{
+  float: left;
+  display: block;
+  color: rgb(174,140,95);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-left: 5px;
+}
+#footerSpan{
+  margin-right: 10px;
+  color:rgb(174,140,95);
+  font-size: 15px;
+}
+
+#footer a:hover {
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+#ancre{
+  color:rgb(174,140,95);
+}
+#ancre:hover{
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+
+
+
+
+
+/*----- MAIN ------- */
+/* .main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+#description{
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+  }
+  #description::-webkit-scrollbar{
+  width: 12px;
+  }
+  #description::-webkit-scrollbar-track{
+  background: rgb(15, 21, 24);
+  border: 1px solid black;
+  }
+  #description::-webkit-scrollbar-thumb {
+  background-color: white;   
+  border-radius: 30px;       
+  border: 1px solid black;  
+  } */
+
+/* ACCUEIl */
+
+#buttonAccueil{
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+  margin-left:400px;
+}
+
+#buttonAccueil:hover {
+  color: rgb(174,140,95);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+button{
+  font-family: 'Abril Fatface', cursive;
+}
+
+#priceAccueil{
+  color: rgb(174,140,95);
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bold;
+}
+
+#checkout-button{
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+}
+
+#checkout-button:hover {
+  color: rgb(174,140,95);
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+#priceItem{
+  color: rgb(174,140,95);
+  font-family: 'Abril Fatface', cursive;
+  font-weight: bold;
+}
+
+#containerItem, #menuAccueil, #listChefs{
+  font-family: 'Abril Fatface', cursive;
+  
+}
+
+#containerItem{
+  margin-top: 50px;
+}
+
+#cardAccueil{
+  border: solid 0.3px rgb(174,140,95);
+  
+}
+
+#buttonChefs, #btn_chefMeals{
+  font-family: 'Abril Fatface', cursive;
+  color:  rgb(174,140,95);
+  background-color: #CECECE;
+}
+
+
+.validation{
+ 
+  font-family: 'Abril Fatface', cursive;
+ 
+}
+
+/* #accueil{
+  background-color:#333;
+  opacity: 0.7;
+  padding-bottom: 36%;
+} */
+
+@media screen and (max-width: 500px) {
+  #footer a {
+    float: none;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #header a {
+    float: none;
+    display: block;
+  }
+}
