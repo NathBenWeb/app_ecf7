@@ -51,7 +51,7 @@
                         </div>
                         <div class="item contact-box email">
                             <span class="logoContact"><i class="fas fa-at"></i></span>
-                            <div class="text2"><a id="email" href="mailto:nathaliebendavidweb@gmail.com">nathaliebendavidweb@gmail.com</a></div>
+                            <div class="text2"><a id="emailContact" href="mailto:nathaliebendavidweb@gmail.com">nathaliebendavidweb@gmail.com</a></div>
                         </div>
                         
                     </div>

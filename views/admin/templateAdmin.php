@@ -12,10 +12,6 @@
 <body>
 
 <div class="sidenav">
-  <!-- <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>-->
-   
   <h4 class="text-center text-white">Un Chef à la Maison</h4>
   <div class=""><a class="navbar-brand text-center" href="#"><img src="./assets/pictures/logo2.png" width="70px"/></a></div>
 

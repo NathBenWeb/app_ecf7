@@ -59,8 +59,7 @@ class PublicController{
             $id_meal = htmlspecialchars(addslashes($_POST["id_meal"]));
             $name_meal = htmlspecialchars(addslashes($_POST["name_meal"]));
             $picture_meal = htmlspecialchars(addslashes($_POST["picture_meal"]));
-            // $desc_meal = htmlspecialchars(addslashes($_POST["desc_meal"]));
-             $name_chef = htmlspecialchars(addslashes($_POST["name_chef"]));
+            $name_chef = htmlspecialchars(addslashes($_POST["name_chef"]));
             $price = htmlspecialchars(addslashes($_POST["price"]));
 
             require_once('./views/public/mealItem.php');

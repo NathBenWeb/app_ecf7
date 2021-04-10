@@ -7,7 +7,7 @@
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="text-center">
 
                 <label for="grade">Grade</label>
-                <input type="text" id="grade" name="grade" class="form-control mt-3" placeholder="Veuillez entrer le grade">
+                <input type="text" id="grade" name="grade" class="form-control mt-2" placeholder="Veuillez entrer le grade">
                 <button type="submit" class="btn col-12 mt-3" name="soumis" style="border-radius: 30px; color:rgb(174,140,95); background-color:rgb(3, 3, 29);">Ajouter</button>
             </form>
         </div>

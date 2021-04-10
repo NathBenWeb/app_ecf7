@@ -3,7 +3,9 @@
 class Meal{
     private $id_meal;
     private $name_meal;
-    private $desc_meal;
+    private $start;
+    private $dish;
+    private $dessert;
     private $price;
     private $picture_meal;
     private $chef;
@@ -52,25 +54,7 @@ class Meal{
         return $this;
     }
 
-    /**
-     * Get the value of desc_meal
-     */ 
-    public function getDesc_meal()
-    {
-        return $this->desc_meal;
-    }
-
-    /**
-     * Set the value of desc_meal
-     *
-     * @return  self
-     */ 
-    public function setDesc_meal($desc_meal)
-    {
-        $this->desc_meal = $desc_meal;
-
-        return $this;
-    }
+   
 
     /**
      * Get the value of price
@@ -128,6 +112,66 @@ class Meal{
     public function setChef($chef)
     {
         $this->chef = $chef;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of start
+     */ 
+    public function getStart()
+    {
+        return $this->start;
+    }
+
+    /**
+     * Set the value of start
+     *
+     * @return  self
+     */ 
+    public function setStart($start)
+    {
+        $this->start = $start;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of dish
+     */ 
+    public function getDish()
+    {
+        return $this->dish;
+    }
+
+    /**
+     * Set the value of dish
+     *
+     * @return  self
+     */ 
+    public function setDish($dish)
+    {
+        $this->dish = $dish;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of dessert
+     */ 
+    public function getDessert()
+    {
+        return $this->dessert;
+    }
+
+    /**
+     * Set the value of dessert
+     *
+     * @return  self
+     */ 
+    public function setDessert($dessert)
+    {
+        $this->dessert = $dessert;
 
         return $this;
     }

@@ -28,9 +28,9 @@ body {
   color: rgb(174,140,95);
   text-decoration: none;
   font-size: 20px;
-  margin-left: 5px;
+  margin-left: 20px;
 }
-#header a:last-child{
+#header a{
   margin-right: 10px;
 }
 
@@ -108,14 +108,19 @@ body {
   background-color: #f2f2f2;
   border-radius: 10px;
 }
+.titrePlat{
+  font-family:'Abril Fatface', cursive;
+  font-weight: bold;
+}
 button{
   font-family: 'Abril Fatface', cursive;
 }
 
-#priceAccueil{
+#priceAccueil, #priceItem{
   color: rgb(174,140,95);
   font-family: 'Abril Fatface', cursive;
   font-weight: bold;
+  font-size: larger;
 }
 
 #checkout-button{
@@ -129,13 +134,7 @@ button{
   border-radius: 10px;
 }
 
-#priceItem{
-  color: rgb(174,140,95);
-  font-family: 'Abril Fatface', cursive;
-  font-weight: bold;
-}
-
-#containerItem, #menuAccueil, #listChefs{
+#containerItem, #menuAccueil, #listChefs, #chefMealTitle{
   font-family: 'Abril Fatface', cursive;
   
 }
@@ -157,12 +156,22 @@ button{
 
 
 .validation{
- 
   font-family: 'Abril Fatface', cursive;
- 
 }
 
-/* CONTACT */
+.titrePlat, .card-text{
+  margin-left: 110px;
+}
+/* .card-body{
+  margin-top: 10px;
+} */
+
+h5 > span{
+  color:  rgb(174,140,95);
+  font-size: 30px;
+}
+
+/* ----------------------------CONTACT ----------------------------*/
 
 #connex, #inscr{
   border: solid 3px black;
@@ -229,17 +238,25 @@ button{
   font-weight: 500;
   font-size: 20px;
 }
+
 .contact-box #email {
   
   font-weight: 500;
   font-size: 20px;
 }
 
+
+
 .phone {
   background-color: rgb(3, 3, 29);
   color: #f2f2f2;
   margin-bottom: 52px;
   text-align: center;
+}
+.phone:hover {
+  background-color:#918d8d;
+  
+  
 }
 
 .email {
@@ -248,17 +265,19 @@ button{
   text-align: center;
   margin-bottom: 40px;
 }
+.email:hover{
+  background-color:#918d8d;
+  
+}
 
-#tel, #email{
+#tel, #emailContact{
   display:flex;
   flex-direction: column;
   color: #f2f2f2;
   text-decoration: none;
 }
-#tel:hover, #email:hover{
-  color: rgb(174,140,95);
-}
-#email{
+
+#emailContact{
   font-size: 25px;
   font-weight: bold;
 }
@@ -275,9 +294,6 @@ iframe{
 #inscription{
   background-color: linear-gradient( rgb(3, 3, 29), #f2f2f2, rgb(174,140,95));
 }
-
-
-
 
 
 

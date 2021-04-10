@@ -37,7 +37,7 @@ body {
 
 /* Main content */
 .main {
-  margin-left: 200px; /* Same as the width of the sidenav */
+  margin-left: 150px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
@@ -60,9 +60,11 @@ body {
   float: right;
   padding-right: 8px;
 }
-
-
-
+#btn_chefMeals{
+  font-family: 'Abril Fatface', cursive;
+  color:  rgb(174,140,95);
+  background-color: #CECECE;
+}
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

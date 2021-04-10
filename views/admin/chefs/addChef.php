@@ -4,7 +4,7 @@
 <h2 class="text-center text-decoration-underline mb-4 mt-4">Formulaire d'ajout de Chefs</h2>
 <div class="row">
         <div class="col-8 offset-2">
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="text-center" enctype="multipart/form-data">
+        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="" enctype="multipart/form-data">
             <div class="row mt-3">
                 <div class="col">
                     <label for="name_chef">Nom Chef</label>

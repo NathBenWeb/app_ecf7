@@ -4,7 +4,7 @@
         <div class="col-4 offset-8">
             <form action="<?php $_SERVER["PHP_SELF"];?>" method="post" class="input-group" enctype="multipart/form-data">
                 <input class="form-control" type="search" name="search" id="search" placeholder="Rechercher">
-                <button type="submit" class="btn btn-outline-secondary" name="soumis"><i class="fas fa-search"></i></button>
+                <button id="btn_chefMeals" type="submit" class="btn btn-outline-secondary" name="soumis"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </div>
@@ -15,7 +15,9 @@
             <tr>
                 <th>Id</th>
                 <th>Nom</th>
-                <th>Composition</th>
+                <th>Entrée</th>
+                <th>Plat</th>
+                <th>Dessert</th>
                 <th>Prix</th>
                 <th>Image</th>
                 <th>Chef</th>
@@ -28,7 +30,9 @@
             <?php if(is_array($meals)){ foreach ($meals as  $meal) { ?>
                 <td><?=$meal->getId_meal();?></td>
                 <td><?=$meal->getName_meal();?></td>
-                <td><?=substr($meal->getDesc_meal(),0, 16)." </br>[Editer pour lire la suite...]";?></td>
+                <td><?=substr($meal->getStart(),0, 16)." </br>[Editer pour lire la suite...]";?></td>
+                <td><?=substr($meal->getDish(),0, 16)." </br>[Editer pour lire la suite...]";?></td>
+                <td><?=substr($meal->getDessert(),0, 16)." </br>[Editer pour lire la suite...]";?></td>
                 <td><?=$meal->getPrice();?></td>
                 <td><img src="./assets/pictures/<?=$meal->getPicture_meal();?>" alt="" width="100"></td>
                 <td><?=$meal->getChef()->getName_chef();?></td>

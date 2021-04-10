@@ -3,7 +3,7 @@
 ?>
 
 <div class="container">
-    <h2 class="text-center text-decoration-underline mb-4 mt-4">Formulaire de modification de grade</h2>
+    <h2 class="text-center text-decoration-underline mb-4 mt-4">Formulaire de modification utilisateur</h2>
     <div class="row">
         <div class="col-8 offset-2">
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="">

@@ -53,14 +53,18 @@ class MealController{
             if(isset($_POST["soumis"]) && !empty($_POST["name_meal"]) && !empty($_POST["price"])){
         
                 $name_meal = addslashes(htmlspecialchars(trim($_POST["name_meal"])));
-                $desc_meal = addslashes(htmlspecialchars(trim($_POST["desc_meal"])));
+                $start = addslashes(htmlspecialchars(trim($_POST["start"])));
+                $dish = addslashes(htmlspecialchars(trim($_POST["dish"])));
+                $dessert = addslashes(htmlspecialchars(trim($_POST["dessert"])));
                 $price = addslashes(htmlspecialchars(trim($_POST["price"])));
                 $id_chef = addslashes(htmlspecialchars(trim($_POST["id_chef"])));
                 $picture_meal = $_FILES ["picture"]["name"];
 
                 // On va modifier l'objet $editCar créé plus haut dans le premier if
                 $editMeal->setName_meal($name_meal);
-                $editMeal->setDesc_meal($desc_meal);
+                $editMeal->setStart($start);
+                $editMeal->setDish($dish);
+                $editMeal->setDessert($dessert);
                 $editMeal->setPrice($price);
                 $editMeal->setPicture_meal($picture_meal);
                 $editMeal->getChef()->setId_chef($id_chef);
@@ -84,14 +88,18 @@ class MealController{
         if(isset($_POST["soumis"]) && !empty($_POST["name_meal"]) && !empty($_POST["price"])){
     
             $name_meal = addslashes(htmlspecialchars(trim($_POST["name_meal"])));
-            $desc_meal = addslashes(htmlspecialchars(trim($_POST["desc_meal"])));
+            $start = addslashes(htmlspecialchars(trim($_POST["start"])));
+            $dish = addslashes(htmlspecialchars(trim($_POST["dish"])));
+            $dessert = addslashes(htmlspecialchars(trim($_POST["dessert"])));
             $price = addslashes(htmlspecialchars(trim($_POST["price"])));
             $id_chef = addslashes(htmlspecialchars(trim($_POST["id_chef"])));
             $picture_meal = $_FILES ["picture"]["name"];
 
             $newM = new Meal();
             $newM->setName_meal($name_meal);
-            $newM->setDesc_meal($desc_meal);
+            $newM->setStart($start);
+            $newM->setDish($dish);
+            $newM->setDessert($dessert);
             $newM->setPrice($price);
             $newM->setPicture_meal($picture_meal);
             $newM->getChef()->setId_chef($id_chef);

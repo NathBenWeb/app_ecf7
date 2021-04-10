@@ -4,7 +4,7 @@
         <div class="col-4 offset-8">
             <form action="<?php $_SERVER["PHP_SELF"];?>" method="post" class="input-group">
                 <input class="form-control" type="search" name="search" id="search" placeholder="Rechercher">
-                <button type="submit" class="btn btn-outline-secondary" name="soumis"><i class="fas fa-search"></i></button>
+                <button id="btn_chefMeals" type="submit" class="btn btn-outline-secondary" name="soumis"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </div>

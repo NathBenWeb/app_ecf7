@@ -1,11 +1,11 @@
 <?php ob_start(); ?>
 
 <div class="container">
-<h2 class="text-center text-decoration-underline mb-4 mt-4">Modifier le menu n° <?=$editMeal->getId_meal();?></h2>
+<h2 class="text-center text-decoration-underline mb-4 mt-4">Modifier le <?=$editMeal->getName_meal();?></h2>
     <div class="row">
         <div class="col-8 offset-2">
             <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" class="" enctype="multipart/form-data">
-                <div class="row mt-3">
+                <div class="row mt-3 mb-3">
                     <div class="col">
                         <label for="id_chef">Chef</label>
                         <select id="id_chef" name="id_chef" class="form-select">
@@ -32,24 +32,34 @@
                         <input type="text" id="name_meal" name="name_meal" class="form-control" value="<?=$editMeal->getName_meal();?>">
                     </div>
                 </div>    
-                <div class="row mt-3" >
-                    <div class="col" style="margin-top: 40px;">
+                <div class="row " >
+                    <div class="col">
                         <label for="picture">Image</label>
                         <input type="file" id="picture" name="picture" class="form-control" value="" >
+                        <img src="./assets/pictures/<?=$editMeal->getPicture_meal();?>" alt="" width="200" class="img-thumbnail mt-2" style="">
                     </div>
-                    <div class="col"> 
-                        <img src="./assets/pictures/<?=$editMeal->getPicture_meal();?>" alt="" width="200" class="img-thumbnail mt-2" style="margin-left:60px">
-                    </div>   
+                    <div class="col">
+                        <label for="price">Prix</label>
+                        <input type="text" id="price" name="price" class="form-control" value="<?=$editMeal->getPrice()."€";?>">
+                    </div>
+                </div>
+                
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <label for="start">Entrée</label>
+                        <textarea type="text" id="start" name="start" class="form-control"><?=$editMeal->getStart();?></textarea>
+                    </div>
                 </div>
                 <div class="row mt-3 mb-3">
-                    <div class="col-2">
-                        <label for="price">Prix</label>
-                        <input type="text" style="height:63px;" id="price" name="price" class="form-control" value="<?=$editMeal->getPrice()."€";?>">
+                    <div class="col">
+                        <label for="dish">Plat</label>
+                        <textarea type="text" id="dish" name="dish" class="form-control"><?=$editMeal->getDish();?></textarea>
                     </div>
-                
-                    <div class="col-10">
-                        <label for="desc_meal">Composition</label>
-                        <textarea type="text" id="desc_meal" name="desc_meal" class="form-control"><?=$editMeal->getDesc_meal();?></textarea>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <label for="dessert">Dessert</label>
+                        <textarea type="text" id="dessert" name="dessert" class="form-control"><?=$editMeal->getDessert();?></textarea>
                     </div>
                 </div>
             

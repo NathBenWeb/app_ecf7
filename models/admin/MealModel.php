@@ -34,7 +34,9 @@ class MealModel extends Driver{
             $m = new Meal();
             $m->setId_meal($meal->id_meal);
             $m->setName_meal($meal->name_meal);
-            $m->setDesc_meal($meal->desc_meal);
+            $m->setStart($meal->start);
+            $m->setDish($meal->dish);
+            $m->setDessert($meal->dessert);
             $m->setPrice($meal->price);
             $m->setPicture_meal($meal->picture_meal);
             $m->getChef()->setId_chef($meal->id_chef);
@@ -67,7 +69,9 @@ class MealModel extends Driver{
             $editMeal = new Meal();
             $editMeal -> setId_meal($mealRow->id_meal);
             $editMeal -> setName_meal($mealRow->name_meal);
-            $editMeal -> setDesc_meal($mealRow->desc_meal);
+            $editMeal->setStart($mealRow->start);
+            $editMeal->setDish($mealRow->dish);
+            $editMeal->setDessert($mealRow->dessert);
             $editMeal -> setPrice($mealRow->price);
             $editMeal -> setPicture_meal($mealRow->picture_meal);
             $editMeal -> getChef()->setId_chef($mealRow->id_chef);
@@ -78,21 +82,25 @@ class MealModel extends Driver{
     public function updateMeal(Meal $updateM){
         if($updateM -> getPicture_meal() === ""){
             $sql = "UPDATE meals
-                SET name_meal = :name_meal, desc_meal = :desc_meal, price = :price, id_chef = :id_chef
+                SET name_meal = :name_meal, start = :start, dish = :dish, dessert = :dessert, price = :price, id_chef = :id_chef
                 WHERE id_meal = :id_meal";
 
             $tabParams = ["name_meal"=>$updateM->getName_meal(),
-                            "desc_meal"=>$updateM->getDesc_meal(),
+                            "start"=>$updateM->getStart(),
+                            "dish"=>$updateM->getDish(),
+                            "dessert"=>$updateM->getDessert(),
                             "price"=>$updateM->getPrice(),
                             "id_chef"=>$updateM->getChef()->getId_chef(),
                             "id_meal"=>$updateM->getId_meal()];
         }else{
             $sql = "UPDATE meals
-                SET name_meal = :name_meal, desc_meal = :desc_meal, price = :price, picture_meal = :picture, id_chef = :id_chef
+                SET name_meal = :name_meal, start = :start, dish = :dish, dessert = :dessert, price = :price, picture_meal = :picture, id_chef = :id_chef
                 WHERE id_meal = :id_meal";
 
             $tabParams = ["name_meal"=>$updateM->getName_meal(),
-                            "desc_meal"=>$updateM->getDesc_meal(),
+                            "start"=>$updateM->getStart(),
+                            "dish"=>$updateM->getDish(),
+                            "dessert"=>$updateM->getDessert(),
                             "price"=>$updateM->getPrice(),
                             "picture"=>$updateM->getPicture_meal(),
                             "id_chef"=>$updateM->getChef()->getId_chef(),
@@ -104,11 +112,13 @@ class MealModel extends Driver{
     }
 
     public function insertMeal(Meal $meal){
-        $sql = "INSERT INTO meals(name_meal, desc_meal, price, picture_meal, id_chef)
-                VALUES (:name_meal, :desc_meal, :price, :picture, :id_chef)";
+        $sql = "INSERT INTO meals(name_meal, start, dish, dessert, price, picture_meal, id_chef)
+                VALUES (:name_meal, :start, :dish, :dessert, :price, :picture, :id_chef)";
 
        $tabParams = ["name_meal"=>$meal->getName_meal(),
-                    "desc_meal"=>$meal->getDesc_meal(),
+                    "start"=>$meal->getStart(),
+                    "dish"=>$meal->getDish(),
+                    "dessert"=>$meal->getDessert(),
                     "price"=>$meal->getPrice(),
                     "picture"=>$meal->getPicture_meal(),
                     "id_chef"=>$meal->getChef()->getId_chef()];

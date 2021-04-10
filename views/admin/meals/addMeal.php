@@ -32,8 +32,20 @@
                 </div>
                 <div class="row mt-3 mb-3">
                     <div class="col">
-                        <label for="desc_meal">Composition</label>
-                        <textarea  id="desc_meal" name="desc_meal" class="form-control" placeholder="Contenu..." ></textarea>
+                        <label for="start">Entrée</label>
+                        <textarea  id="start" name="start" class="form-control" placeholder="Entrée..." ></textarea>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <label for="dish">Plat</label>
+                        <textarea  id="dish" name="dish" class="form-control" placeholder="Plat..." ></textarea>
+                    </div>
+                </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <label for="dessert">Dessert</label>
+                        <textarea  id="dessert" name="dessert" class="form-control" placeholder="Dessert..." ></textarea>
                     </div>
                 </div>
                     

@@ -13,7 +13,7 @@
         <div class="col-md-8">
           <div class="card-body">
             <h4 class="card-title text-end"><?=$name_meal;?></h4>
-            <h5 class="card-title text-end">Par <?=$name_chef;?></h5>
+            <h5 class="card-title text-end">by <?=$name_chef;?></h5>
             <p id="priceItem" class="card-text text-end">Prix: <?=$price;?> €</p>
           </div>
         </div>
@@ -24,7 +24,7 @@
   <div class="col-3 ml-5 mt-2">
     <h4 class="text-center">Validation</h4>
       <form>
-        <label for="email">Email*</label>
+        <label for="email" id="emailValider">Email*</label>
         <input type="email"id="email" class="form-control" placeholder="Votre email svp...">
         <label class="mt-3" for="quant">Quantite*</label>
         <input type="number" id="quant" class="form-control" min="1" value="1" max="10">

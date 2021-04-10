@@ -16,7 +16,9 @@ class PublicModel extends Driver{
             $newMeal = new Meal;
             $newMeal->setId_meal($row->id_meal);
             $newMeal->setName_meal($row->name_meal);
-            $newMeal->setDesc_meal($row->desc_meal);
+            $newMeal->setStart($row->start);
+            $newMeal->setDish($row->dish);
+            $newMeal->setDessert($row->dessert);
             $newMeal->setPrice($row->price);
             $newMeal->setPicture_meal($row->picture_meal);
             $newMeal->getChef()->setId_chef($row->id_chef);
