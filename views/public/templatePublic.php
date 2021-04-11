@@ -16,10 +16,10 @@
   <div id="ancre"></div>
   <div id="header" class="navbar">
     <a id class="navbar-brand" href="index.php"><img id="logoHeader" src="./assets/pictures/logo2.png" alt="" class="logo" width="80px"></a>
-    <a class="nav-link active" aria-current="page" href="index.php?action=accueil"><i class="fas fa-door-open"></i> Accueil</a>
+    <a class="nav-link active" aria-current="page" href="index.php?action=accueil"><i class="fas fa-store"></i> Boutique</a>
     <a class="nav-link" href="index.php?action=contact"><i class="fa fa-fw fa-envelope"></i> Contact</a>
     <a class="nav-link" href="index.php?action=about"><i class="far fa-hand-point-right"></i> A propos</a>
-    <a class="nav-link" href="index.php?action=checkout"><i class="fas fa-shopping-basket"></i> Votre panier</a>
+    <a class="nav-link" href="index.php?action=checkout" value=""><i class="fas fa-shopping-basket"></i> Votre panier</a>
     <a href="index.php?action=login"><i class="fas fa-users-cog"></i></i></a>
   </div>
    
@@ -32,7 +32,6 @@
 <footer>
   <div id="footer" class="navbar">
     <a class="navbar-brand" href="index.php">Un Chef à la maison</a>
-    <a class="nav-link active" aria-current="page" href="index.php">Accueil</a>
     <a class="nav-link active" href="">Conditions générales</a>
     <a class="nav-link active" href="">Politique de confidentialité</a>
     <a class="nav-link active" href="">FAQ</a>

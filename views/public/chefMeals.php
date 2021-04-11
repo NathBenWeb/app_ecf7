@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col-12 d-flex"> 
         <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post" class="input-group">
-          <input class="form-control search mt-3 " type="search" name="search" id="search" placeholder="Rechechez...">
+          <input class="form-control search mt-3 " type="search" name="search" id="search" placeholder="Recherchez...">
           <button id="btn_chefMeals" type="submit" class="btn btn-outline-secondary mt-3 mr-5" name="soumis"><i class="fas fa-search"></i></button>
         </form>
       <div class="col mt-3"><img src="./assets/pictures/chef-hat.png" alt="" class="mr-1" width="30px"></div>
@@ -29,7 +29,7 @@
     <div class="col-6 mt-2">
     <img src="./assets/pictures/<?=$meal->getPicture_meal();?>" alt="..." width="600px" height="250px">
     <h5 id="menuAccueil" class="card-title ml-2 mb-4 mt-3"><?=$meal->getName_meal();?> by <?=strtoupper($meal->getChef()->getName_chef());?>  <span class="ml-3"><?=$meal->getPrice()." €";?><span></h5>
-    <p id="priceAccueil" class="card-text"></p>
+    <!-- <p id="priceAccueil" class="card-text"></p> -->
     </div>
 
     <div class="col-6">
@@ -45,7 +45,7 @@
        <div  class="">
         
           <form action="index.php?action=checkout" method="post">
-            <button id="buttonAccueil" name="envoi" type="submit" class="btn mb-2 pl-2">Ajouter au panier</button>
+            <button id="buttonAccueil" name="envoi" type="submit" class="btn">Ajouter au panier</button>
             <input type="hidden" name="id_meal" value="<?=$meal->getId_meal();?>">
             <input type="hidden" name="name_meal" value="<?=$meal->getName_meal();?>">
             <input type="hidden" name="name_chef" value="<?=$meal->getChef()->getName_chef();?>">

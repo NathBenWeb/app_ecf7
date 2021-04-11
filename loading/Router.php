@@ -76,6 +76,12 @@ class Router{
                     case "accueil" :
                         $this->ctrpub->getPubMeals();
                         break;
+                    case "del_meal" : //Essai suppression panier
+                        $this->ctrpub->removePanier();
+                        break;
+                    case "add_menu" : //Essai ajout panier
+                        $this->ctrpub->addMenu();
+                            break;
                     case "home" :
                         $this->ctrpub->home();
                         break;

@@ -6,7 +6,9 @@ body {
 	grid-template-rows: auto 1fr auto;
   font-family:'Abril Fatface', cursive;
 }
-
+main{
+  margin-top: 120px;
+}
 
 /*----- HEADER ------- */
 /* Style the navigation bar */
@@ -16,7 +18,9 @@ body {
   overflow: auto;
   border: solid 0.2px rgb(174,140,95);
   font-family:'Abril Fatface', cursive;
-  position: relative;
+  position: fixed;
+  z-index: 3;
+  
   
 }
 
@@ -24,15 +28,14 @@ body {
 #header a {
   float: left;
   text-align: center;
-  padding: 12px;
+  /* padding: 12px; */
   color: rgb(174,140,95);
   text-decoration: none;
   font-size: 20px;
   margin-left: 20px;
-}
-#header a{
   margin-right: 10px;
 }
+
 
 /* Navbar links on mouse-over */
 #header a:hover {
@@ -100,13 +103,29 @@ body {
 #buttonAccueil{
   background-color: rgb(174,140,95);
   color: #f2f2f2;
-  margin-left:400px;
+  font-family: 'Abril Fatface', cursive;
+  margin-left:280px;
+  margin-bottom: 20px;
+  padding :10px 20px 10px 20px;
+  
 }
 
 #buttonAccueil:hover {
   color: rgb(174,140,95);
   background-color: #f2f2f2;
+}
+
+#buttonValid{
+  background-color: rgb(174,140,95);
+  color: #f2f2f2;
+  font-family: 'Abril Fatface', cursive;
+  margin-left: 333px;
   border-radius: 10px;
+}
+#buttonValid:hover {
+  color: rgb(174,140,95);
+  background-color: rgb(3, 3, 29);
+ 
 }
 .titrePlat{
   font-family:'Abril Fatface', cursive;
@@ -126,11 +145,12 @@ button{
 #checkout-button{
   background-color: rgb(174,140,95);
   color: #f2f2f2;
+  border-radius: 10px;
 }
 
 #checkout-button:hover {
   color: rgb(174,140,95);
-  background-color: #f2f2f2;
+  background-color: rgb(3, 3, 29);
   border-radius: 10px;
 }
 
@@ -138,9 +158,12 @@ button{
   font-family: 'Abril Fatface', cursive;
   
 }
-
 #containerItem{
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+#validation{
+  margin-top: 17px;
 }
 
 #cardAccueil{
@@ -148,10 +171,11 @@ button{
   
 }
 
-#buttonChefs, #btn_chefMeals{
+#buttonChefs, #btn_chefMeals, #search {
   font-family: 'Abril Fatface', cursive;
   color:  rgb(174,140,95);
   background-color: #CECECE;
+  border: solid 1px rgb(174,140,95);
 }
 
 
@@ -215,6 +239,7 @@ h5 > span{
   justify-content: space-around;
   align-items: baseline;
   margin-top: 50px;
+  margin-bottom: 30px;
  
  
 }
@@ -224,7 +249,7 @@ h5 > span{
 }
 .contact-box {
   width: 100%;
-  padding: 30px;
+  padding: 29px;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px;
@@ -294,6 +319,36 @@ iframe{
 #inscription{
   background-color: linear-gradient( rgb(3, 3, 29), #f2f2f2, rgb(174,140,95));
 }
+
+/* ----------------------------ABOUT ----------------------------*/
+#about{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  background-color: rgb(3, 3, 29);
+  border: solid 4px rgb(174,140,95);
+}
+
+#img_about{
+  width: 50%;
+  background-color: #333;
+    height: 70vh;
+    background: url("../../assets/pictures/mv_entree.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#text_about{
+  font-family: 'Abril Fatface', cursive;
+  background-color: rgb(3, 3, 29);
+  color: rgb(174,140,95);
+  width: 50%;
+  padding: 0 30px 0 30px;
+  margin-top: 70px;
+  font-size: 3vh;
+  text-align: center;
+  
+  
+}  
 
 
 

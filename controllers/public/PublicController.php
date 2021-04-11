@@ -52,6 +52,51 @@ class PublicController{
             require_once('./views/public/accueil.php');
         }
     }
+
+    public function addMenu(){ //Add test
+        if(isset($_POST["envoi"]) && !empty($_POST["name_meal"]) && !empty($_POST["price"])){
+    
+            $name_meal = addslashes(htmlspecialchars(trim($_POST["name_meal"])));
+            $start = addslashes(htmlspecialchars(trim($_POST["start"])));
+            $dish = addslashes(htmlspecialchars(trim($_POST["dish"])));
+            $dessert = addslashes(htmlspecialchars(trim($_POST["dessert"])));
+            $price = addslashes(htmlspecialchars(trim($_POST["price"])));
+            $id_chef = addslashes(htmlspecialchars(trim($_POST["id_chef"])));
+            $picture_meal = $_FILES ["picture"]["name"];
+
+            $newM = new Meal();
+            $newM->setName_meal($name_meal);
+            $newM->setStart($start);
+            $newM->setDish($dish);
+            $newM->setDessert($dessert);
+            $newM->setPrice($price);
+            $newM->setPicture_meal($picture_meal);
+            $newM->getChef()->setId_chef($id_chef);
+            
+            
+            $ok = $this->pubMeal->getMeals();;
+            if($ok){
+                header("location:index.php?action=accueil&id");
+            }
+        }
+        $tabChef = $this -> pubChef -> getChefs();
+
+        require_once("./views/public/mealItem.php");
+    }
+
+    public function removePanier(){ //Remove test
+        if(isset($_GET["id"]) && filter_var($_GET["id"], FILTER_VALIDATE_INT)){
+            $id = $_GET["id"];
+            $delM = new Meal;
+            $delM->setId_meal($id);
+            $nbLine = $this -> pubMeal->getMeals();
+    
+            if($nbLine > 0){
+                header("location:index.php?action=checkout");
+            }
+        }
+        require_once('./views/public/mealItem.php');
+    }
    
     public function recap(){
         // var_dump($_POST);
@@ -66,6 +111,7 @@ class PublicController{
         }
     }
 
+    
     
     public function payment(){
 // var_dump($_POST);
