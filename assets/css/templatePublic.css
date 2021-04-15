@@ -44,7 +44,7 @@ main{
   border-radius: 10px;
 }
 #header a:first-child:hover {
-  background-color: rgb(3, 3, 29);
+  background-color: #f2f2f2;
 }
 
 /* Current/active navbar link */
@@ -196,44 +196,37 @@ h5 > span{
 }
 
 /* ----------------------------CONTACT ----------------------------*/
-#contact_container{
-  /* background: url("../../assets/pictures/chef_maison3.jfif"); */
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
- 
-}
 
+#connex, #inscr{
+  border: solid 3px black;
+}
 #inscription{
+  
   width: 50%;
-  border: solid 3px rgb(174,140,95);
+  border: solid 1px rgb(174,140,95);
   padding: 30px;
-  height: 140vh;
- 
+  padding-bottom: 14px;
 }
 #contact{
   width: 50%;
   padding-left: 30px;
   padding-right: 30px;
-  border: solid 3px rgb(174,140,95);
-  margin-left: 20px;
+  border: solid 1px rgb(174,140,95);
+  margin-left: 50px;
   padding-top: 30px;
-  height: 140vh;
  
 }
 #titreInscription{
   text-align: center;
   color:rgb(3, 3, 29);
   font-size: 40px;
-  padding-bottom: 30px;
 }
 #titreContact{
  
   text-align: center;
   color:rgb(3, 3, 29);
   font-size: 40px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   
 
 }
@@ -241,6 +234,19 @@ h5 > span{
   text-align: center;
 }
 
+#contact_container{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 30px;
+ 
+ 
+}
+.telEmail{
+  
+  padding-bottom: 50px;
+}
 .contact-box {
   width: 100%;
   padding: 29px;
@@ -301,8 +307,7 @@ h5 > span{
   font-weight: bold;
 }
 iframe{
- margin-top: 30px;
-  
+  margin: 12px 0px 40px 0px;
 }
 .logoContact{
   font-size: 30px;

@@ -38,11 +38,11 @@
       <form>
         <label class="text-end" for="date">Date de livraison souhaitée*</label>
         <input type="date" id="date" class="form-control mb-2">
-        <label for="totalMenu" id="totalMenu">Sous-total</label>
+        <label for="totalMenu" id="totalMenu">Prix total menu</label>
         <input type="text"id="totalMenu" class="form-control mb-2" readonly>
         <label for="livraison" id="livraison">Livraison</label>
         <input type="text"id="livraison" class="form-control mb-2" value="8.90" readonly>
-        <label for="total" id="total">TOTAL</label>
+        <label for="total" id="total">Prix total commande</label>
         <input type="text"id="total" class="form-control mb-2" value="" readonly>
         <label for="email" id="emailValider">Email*</label>
         
@@ -57,7 +57,6 @@
 
         <button type="button" id="checkout-button" class="btn  col-12 mt-3">Valider ma commande</button>
       </form>
-
   </div>
 </div>
 </div>

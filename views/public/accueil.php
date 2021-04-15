@@ -9,11 +9,11 @@
           <button id="btn_chefMeals" type="submit" class="btn btn-outline-secondary mt-3 mr-5" name="soumis"><i class="fas fa-search"></i></button>
         </form>
         
-      <!-- <div class="col mt-3"><img src="./assets/pictures/chef-hat.png" alt="" id="img_hat" class="mr-1" width="30px"></div> -->
+      <div class="col mt-3"><img src="./assets/pictures/chef-hat.png" alt="" id="img_hat" class="mr-1" width="30px"></div>
 
       <!---------------------------- bouton toggle recherche par chef----------------------------------->
       <div class="col-4 dropdown mt-3">
-      <!-- <i class="fas fa-bread-slice mr-2" style="color:rgb(174,140,95); font-size:20px;"></i>--><button id="buttonChefs" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Les menus de vos chefs</button> 
+        <button id="buttonChefs" class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">Les menus de vos chefs</button>
         <ul id="listChefs" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
           <?php foreach($tabChef as $chef){ ?>
           <li><a class="dropdown-item" href="index.php?action=accueil&id=<?=$chef -> getId_chef();?>"><?=$chef->getName_chef();?></a></li>
