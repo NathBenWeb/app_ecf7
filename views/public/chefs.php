@@ -21,7 +21,7 @@
       <img src="./assets/pictures/ef.jpg" class="d-block w-50" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
+        <p>Some representative placeholder content for the third slide. </p>
       </div>
     </div>
   </div>
