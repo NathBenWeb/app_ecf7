@@ -20,7 +20,7 @@
         <h1><span>Un </span><span>Chef </span><span>à </span><span>la </span><span>maison</span></h1>
         <div class="container-btns">
         <a href="" ></a>
-            <a href="#" type="submit" name="soumis" class="btn-first b1">Vos Chefs</a>
+            <a href="index.php?action=chefs" type="submit" name="soumis" class="btn-first b1">Vos Chefs</a>
             <a href="index.php?action=accueil" type="submit" name="soumis" class="btn-first b2">Leurs menus</a>
         </div>
     </div>

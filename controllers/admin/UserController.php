@@ -51,6 +51,7 @@ class UserController{
         require_once("./views/admin/users/login.php");
     }
 
+
     public function editUser(){
 
         AuthController::isLogged();
@@ -65,7 +66,8 @@ class UserController{
             
             if(isset($_POST["soumis"]) && !empty($_POST["name"])){
 
-                $id_u = addslashes(htmlspecialchars(trim($_POST["id"])));
+                // $id_u = addslashes(htmlspecialchars(trim($_POST["id"])));
+
                 $firstname = addslashes(htmlspecialchars(trim($_POST["firstname"])));
                 $name = addslashes(htmlspecialchars(trim($_POST["name"])));
                 $login = addslashes(htmlspecialchars(trim($_POST["login"])));
@@ -82,13 +84,14 @@ class UserController{
                 $user->setEmail($email);
                 $user->setStatus(1);
                 $user->getGrade()->setId_g($id_g);
-                 $ok =$this->adUser->updateUser($user);
-                header("location:index.php?action=list_users");
+                $ok =$this->adUser->updateUser($user);
+                if($ok > 0){
+                    header("location:index.php?action=list_users");
+                }
+                
             }   
                 // var_dump($_POST['id']);
-
-                // if($ok > 0){
-                // }
+  
         require_once("./views/admin/users/editUser.php");
         }
                  

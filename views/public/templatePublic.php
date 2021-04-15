@@ -22,7 +22,6 @@
     <a class="nav-link" href="index.php?action=checkout" value=""><i class="fas fa-shopping-basket"></i> Votre panier</a>
     <a href="index.php?action=login"><i class="fas fa-users-cog"></i></i></a>
   </div>
-   
 </header>
 
   <main>

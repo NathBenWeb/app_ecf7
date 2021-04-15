@@ -53,6 +53,14 @@ class PublicController{
         }
     }
 
+    public function getPubChefs(){
+        
+         
+            $allChef = $this -> pubChef -> getChefs();
+            require_once("./views/public/chefs.php");
+       
+    }
+
     public function addMenu(){ //Add test
         if(isset($_POST["envoi"]) && !empty($_POST["name_meal"]) && !empty($_POST["price"])){
     

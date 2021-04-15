@@ -52,7 +52,7 @@ class UserModel extends Driver{
     public function updateUser(User $updateU){
         
             $sql = "UPDATE users
-                SET firstname = :firstname, name = :name, login = :login,pass = :pass, email = :email, id_g = :id_g,
+                SET firstname = :firstname, name = :name, login = :login, pass = :pass, email = :email, id_g = :id_g,
                 status = :status
                 WHERE id_user = :id";
 

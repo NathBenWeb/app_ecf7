@@ -7,7 +7,7 @@
           <input class="form-control search mt-3 " type="search" name="search" id="search" placeholder="Recherchez...">
           <button id="btn_chefMeals" type="submit" class="btn btn-outline-secondary mt-3 mr-5" name="soumis"><i class="fas fa-search"></i></button>
         </form>
-      <div class="col mt-3"><img src="./assets/pictures/chef-hat.png" alt="" class="mr-1" width="30px"></div>
+      <!-- <div class="col mt-3"><img src="./assets/pictures/chef-hat.png" alt="" class="mr-1" width="30px"></div> -->
 
       <!---------------------------- bouton toggle recherche par chef----------------------------------->
       <div class="col-4 dropdown mt-3">

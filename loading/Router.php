@@ -76,6 +76,9 @@ class Router{
                     case "accueil" :
                         $this->ctrpub->getPubMeals();
                         break;
+                    case "chefs" :
+                        $this->ctrpub->getPubChefs();
+                        break;
                     case "del_meal" : //Essai suppression panier
                         $this->ctrpub->removePanier();
                         break;
