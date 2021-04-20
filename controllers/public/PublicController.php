@@ -54,7 +54,7 @@ class PublicController{
     }
 
     public function addMenu(){ //Add test
-        if(isset($_POST["envoi"]) && !empty($_POST["name_meal"]) && !empty($_POST["price"])){
+        if(isset($_GET["id"]) && !empty($_GET["id"]) ){
     
             $name_meal = addslashes(htmlspecialchars(trim($_POST["name_meal"])));
             $start = addslashes(htmlspecialchars(trim($_POST["start"])));
@@ -197,6 +197,11 @@ class PublicController{
         
             require_once('./views/public/validation.php');
     }
+
+    public function chefs(){
+        
+        require_once('./views/public/chefs.php');
+}
 
     public function contact(){
         

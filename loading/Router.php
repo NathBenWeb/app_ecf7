@@ -85,6 +85,9 @@ class Router{
                     case "home" :
                         $this->ctrpub->home();
                         break;
+                    case "chefs" :
+                        $this->ctrpub->chefs();
+                        break;
                     case "checkout" :
                         $this->ctrpub->recap();
                         break;
