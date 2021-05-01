@@ -8,6 +8,7 @@ class Router{
     private $ctrUser;
     private $ctrGrade;
     private $ctrpub;
+    private $ctrClient;
 
     public function __construct(){
         $this->ctrChef = new ChefController();
@@ -15,6 +16,7 @@ class Router{
         $this->ctrUser = new UserController();
         $this->ctrGrade = new GradeController();
         $this->ctrpub = new PublicController();
+        $this->ctrClient = new ClientController();
     }
 
     // getPath = Pour aller chercher le bon controller
@@ -23,7 +25,7 @@ class Router{
             if(isset($_GET["action"])){
                 switch($_GET["action"]){
                     case "list_chefs" :
-                        $this-> ctrChef -> chefsList(); // Ici on appelle la méthode du controlleur
+                        $this-> ctrChef -> chefsList();
                         break;
                     case "delete_chef" :
                         $this -> ctrChef -> removeChef();
@@ -72,6 +74,9 @@ class Router{
                         break;
                     case "delete_grade" :
                         $this->ctrGrade->removeGrade();
+                        break;
+                    case "list_clients" : // Liste clients admin
+                        $this->ctrClient->clientsList();
                         break;
                     case "accueil" :
                         $this->ctrpub->getPubMeals();

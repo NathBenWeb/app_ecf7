@@ -130,7 +130,7 @@ class PublicController{
                 'unit_amount' =>  $_POST['price']*100,
                 'product_data' => [
                     'name' => $_POST['name_meal']." - ".$_POST['name_chef'],
-                    'images' => ["https://i.imgur.com/EHyR2nP.png"],
+                    'images' => ["https://imgshare.io/images/2021/04/20/paiement.jpg"],
                 ],
                 ],
                 'quantity' => $_POST["quantity"],

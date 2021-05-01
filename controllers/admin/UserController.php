@@ -128,10 +128,6 @@ class UserController{
     // }
 
 
-
-
-
-
     public function addUser(){
         AuthController::isLogged();
         if(isset($_POST["soumis"])){

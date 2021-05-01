@@ -7,6 +7,13 @@
 <link rel="stylesheet" href="./assets/css/formStyle.css">
 <link rel="icon" type="image/png" sizes="18x18" href="./assets/pictures/logo2.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+<!-- Polices personnalisées pour ce modèle -->
+<link href = "vendor / font-awesome / css / font-awesome.min.css" rel = "stylesheet" type = "text / css" >
+<!-- Plugin au niveau de la page CSS -->
+<link href = "vendor / datatables / dataTables.bootstrap4.css" rel = "stylesheet" >
+<!-- Styles personnalisés pour ce modèle -->
+<link href = "css / sb-admin.css" rel = "stylesheet" >
+</head>
 
 </head>
 <body>
@@ -19,7 +26,8 @@
   <!-- <a href="index.php?action=login"><i class="fas fa-sign-out-alt text-white"></i>Connexion</a> -->
   <h5 class="text-white text-center mb-4">Bonjour <?php if(isset($_SESSION["Auth"])) echo $_SESSION["Auth"]->firstname;?></h5>
     <a href="index.php?action=logout"><i class="fas fa-key" style="color:rgb(174,140,95);"></i> Déconnexion</a>
-
+  
+  
   <button class="dropdown-btn"><i class="fas fa-bread-slice" style="color:rgb(174,140,95);"></i> Chefs
     <i class="fa fa-caret-down"></i>
   </button>
@@ -37,7 +45,16 @@
   </div>
   
   <!-- Si la session de l'utilisateur est autre qu'un grade 3 alors à accès à ce qui suit (donc grade 3 (user) n'a pas accès) -->
-  <?php if($_SESSION["Auth"]->id_g != 3){?> 
+  <?php if($_SESSION["Auth"]->id_g == 1){?> 
+
+  <button class="dropdown-btn"><i class="fas fa-user-circle" style="color:rgb(174,140,95);"></i> Clients
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="index.php?action=contact"><i class="fas fa-plus text-white"></i> Ajout</a>
+    <a href="index.php?action=list_clients"><i class="fas fa-list text-white"></i> Liste</a>
+  </div>
+
   <button class="dropdown-btn"><i class="fas fa-user-graduate" style="color:rgb(174,140,95);"></i> Grades 
     <i class="fa fa-caret-down"></i>
   </button>
@@ -50,9 +67,9 @@
     <i class="fa fa-caret-down"></i>
   </button>
   <div class="dropdown-container">
-  <?php if($_SESSION["Auth"]->id_g == 1){?> 
+  
     <a href="index.php?action=register"><i class="fa fa-registered text-white" aria-hidden="true"></i> Inscription</a>
-    <?php } ?>
+    
     <!-- <a href="index.php?action=login"><i class="fas fa-key text-white"></i>Connexion</a> -->
     <a href="index.php?action=list_users"><i class="fa fa-list text-white" aria-hidden="true"></i> Liste</a>
   </div>
